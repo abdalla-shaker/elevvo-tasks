@@ -1,0 +1,403 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  overflow: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family:
+    system-ui,
+    -apple-system,
+    BlinkMacSystemFont,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  overflow: hidden;
+  display: flex;
+  color: #1a1a1a;
+  background-color: #f8fafc;
+}
+
+.flex {
+  display: flex;
+}
+
+.flex-col {
+  flex-direction: column;
+}
+
+/* Sidebar Styles */
+.aside {
+  height: 100dvh;
+  padding: 1.6rem 2rem;
+  justify-content: space-between;
+  background-color: #16a34a;
+  transition:
+    flex-basis 0.2s ease-in-out,
+    padding 0.2s ease-in-out;
+  flex-shrink: 0;
+  z-index: 10;
+
+  border-top-right-radius: 1.6rem;
+  border-bottom-right-radius: 1.6rem;
+}
+
+.aside.active {
+  flex-basis: 260px;
+}
+
+.aside {
+  flex-basis: 80px;
+}
+
+.aside.active span {
+  display: block;
+  opacity: 1;
+  transform: translateX(0);
+  transition:
+    display 0.3s allow-discrete,
+    opacity 0.3s 0.1s,
+    transform 0.3s 0.1s;
+}
+
+.aside span {
+  display: none;
+  opacity: 0;
+  transform: translateX(-20px);
+  transition:
+    display 0s 0.1s allow-discrete,
+    opacity 0.1s 0s,
+    transform 0.1s 0s;
+}
+
+@starting-style {
+  .aside.active span {
+    opacity: 0;
+    transform: translateX(-20px);
+  }
+}
+
+.logo {
+  width: 32px;
+  margin: 1.2rem;
+}
+
+.nav {
+  gap: 3.2rem;
+}
+
+.nav-list {
+  gap: 1.2rem;
+  list-style: none;
+}
+
+.aside .nav-list--item img {
+  width: 24px;
+  height: 24px;
+}
+
+.aside .nav-list--item a:link,
+.aside .nav-list--item a:visited {
+  font-size: 1.6rem;
+  font-weight: 600;
+  text-decoration: none;
+  color: #000;
+  gap: 1.2rem;
+  align-items: center;
+  padding: 1.2rem 1.6rem;
+  border-radius: 1.2rem;
+  transition: all 0.2s ease-in-out;
+  white-space: nowrap;
+}
+
+.aside .nav-list--item a:hover,
+.aside .nav-list--item a:active {
+  background-color: #ffffff73;
+}
+
+a.active {
+  background-color: #fff;
+}
+
+.aside .nav-list--item a.active:hover,
+.aside .nav-list--item a.active:active {
+  background-color: #fff;
+}
+
+.aside .btn {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: #fff;
+  cursor: pointer;
+  margin: 1.2rem auto;
+}
+
+.aside .btn svg {
+  transition: all 0.3s ease-in-out;
+}
+
+.aside.active .btn svg {
+  rotate: 180deg;
+}
+
+/* Main Content Area */
+main {
+  width: 100%;
+  height: 100dvh;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+}
+
+section {
+  min-height: 100dvh;
+  padding: 6rem 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  scroll-snap-align: start;
+}
+
+h1 {
+  font-size: 4.4rem;
+  line-height: 1.15;
+  margin-bottom: 1.6rem;
+}
+
+h2 {
+  font-size: 3.6rem;
+  margin-bottom: 2rem;
+}
+
+/* Hero Section */
+.hero {
+  background: linear-gradient(135deg, #f0fdf4 0%, #e0f2fe 100%);
+}
+
+.hero-subtitle {
+  font-size: 2rem;
+  color: #475569;
+  max-width: 600px;
+  margin-bottom: 3.2rem;
+  line-height: 1.5;
+}
+
+.cta-buttons {
+  gap: 1.6rem;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  font-size: 1.6rem;
+  font-weight: 600;
+  padding: 1.2rem 2.4rem;
+  border-radius: 0.8rem;
+  text-decoration: none;
+  transition:
+    transform 0.2s,
+    background-color 0.2s;
+}
+
+.btn-primary {
+  background-color: #16a34a;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #15803d;
+  transform: translateY(-2px);
+}
+
+.btn-secondary {
+  background-color: #fff;
+  color: #0f172a;
+  border: 1px solid #cbd5e1;
+}
+
+.btn-secondary:hover {
+  background-color: #f1f5f9;
+  transform: translateY(-2px);
+}
+
+/* About Section */
+.about-lead {
+  font-size: 1.8rem;
+  color: #334155;
+  max-width: 700px;
+  margin-bottom: 3.2rem;
+  line-height: 1.6;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 2rem;
+}
+
+.skill-card {
+  background: #fff;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+  border: 1px solid #e2e8f0;
+}
+
+.skill-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.skill-card p {
+  font-size: 1.4rem;
+  color: #64748b;
+  line-height: 1.5;
+}
+
+/* Projects Section */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 2.4rem;
+}
+
+.project-card {
+  background: #fff;
+  padding: 2.4rem;
+  border-radius: 1.2rem;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+.project-card h3 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+.project-card p {
+  font-size: 1.4rem;
+  color: #475569;
+  line-height: 1.5;
+  margin-bottom: 2rem;
+}
+
+.tags {
+  gap: 0.8rem;
+  flex-wrap: wrap;
+}
+
+.tags span {
+  font-size: 1.2rem;
+  background-color: #f1f5f9;
+  color: #334155;
+  padding: 0.4rem 0.8rem;
+  border-radius: 0.4rem;
+  font-weight: 500;
+}
+
+/* Contact Section */
+.contact-desc {
+  font-size: 1.6rem;
+  color: #475569;
+  margin-bottom: 2.4rem;
+}
+
+.contact-form {
+  max-width: 500px;
+  gap: 1.6rem;
+}
+
+.form-group {
+  gap: 0.6rem;
+}
+
+.form-group label {
+  font-size: 1.4rem;
+  font-weight: 600;
+  color: #334155;
+}
+
+.form-group input,
+.form-group textarea {
+  font-family: inherit;
+  font-size: 1.4rem;
+  padding: 1rem 1.4rem;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.8rem;
+  outline: none;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  border-color: #16a34a;
+  box-shadow: 0 0 0 3px rgba(22, 163, 74, 0.15);
+}
+
+.btn-submit {
+  font-size: 1.6rem;
+  font-weight: 600;
+  background-color: limegreen;
+  color: #000;
+  padding: 1.2rem;
+  border: none;
+  border-radius: 0.8rem;
+  cursor: pointer;
+  transition: opacity 0.2s;
+}
+
+.btn-submit:hover {
+  opacity: 0.9;
+}
+
+/* Responsive Breakpoints */
+@media (max-width: 768px) {
+  section {
+    padding: 4rem 2rem;
+  }
+
+  h1 {
+    font-size: 3.2rem;
+  }
+
+  h2 {
+    font-size: 2.8rem;
+  }
+
+  .aside.active {
+    flex-basis: 200px;
+  }
+}
+
+@media (max-width: 576px) {
+  .aside {
+    position: absolute;
+    left: -100%;
+    width: 100%;
+    padding: 1rem 2rem;
+    transition: all 0.3s ease-in-out;
+    border-radius: 0;
+  }
+
+  .aside.active {
+    left: 0;
+  }
+
+  .aside .btn {
+    position: fixed;
+    top: 1.6rem;
+    right: 3.2rem;
+  }
+
+  main {
+    height: calc(100dvh - 60px);
+  }
+}

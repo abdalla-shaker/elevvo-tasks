@@ -1,0 +1,208 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Collapsible Sidebar</title>
+    <link rel="stylesheet" href="css/style.css" />
+    <script src="js/script.js" defer></script>
+  </head>
+  <body>
+    <aside class="aside active flex flex-col">
+      <nav class="nav flex flex-col">
+        <img
+          src="images/logo.svg"
+          alt="Logo image"
+          aria-hidden="true"
+          class="logo"
+        />
+        <ul class="nav-list flex flex-col">
+          <li class="nav-list--item">
+            <a class="active flex" href="#home">
+              <img
+                src="images/home-icon.svg"
+                alt="home icon"
+                aria-hidden="true"
+                class="icon"
+              />
+              <span>Home</span>
+            </a>
+          </li>
+          <li class="nav-list--item">
+            <a class="flex" href="#about">
+              <img
+                src="images/about-icon.svg"
+                alt="about icon"
+                aria-hidden="true"
+                class="icon"
+              />
+              <span>About</span>
+            </a>
+          </li>
+          <li class="nav-list--item">
+            <a class="flex" href="#projects">
+              <img
+                src="images/web-icon.svg"
+                alt="projects icon"
+                aria-hidden="true"
+                class="icon"
+              />
+              <span>projects</span>
+            </a>
+          </li>
+          <li class="nav-list--item">
+            <a class="flex" href="#contact">
+              <img
+                src="images/contact-icon.svg"
+                alt="contact icon"
+                aria-hidden="true"
+                class="icon"
+              />
+              <span>Contact</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+      <button aria-label="expand the sidebar" class="btn flex">
+        <svg
+          width="16"
+          height="16"
+          viewBox="0 0 255 467"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          aria-hidden="true"
+        >
+          <path
+            d="M234 183.063L168.334 117.396L61.3337 10.396C38.6667 -11.9373 0 4.06267 0 36.0627V243.73V430.73C0 462.73 38.6667 478.73 61.3337 456.063L234 283.397C261.667 256.063 261.667 210.73 234 183.063Z"
+            fill="#000"
+          />
+        </svg>
+      </button>
+    </aside>
+    <main>
+      <section class="hero active" id="home">
+        <div class="hero-content">
+          <h1>Building Accessible & Modern Web Apps</h1>
+          <p class="hero-subtitle">
+            Frontend Specialist focusing on performance, clean structure, and
+            seamless user experiences.
+          </p>
+          <div class="cta-buttons flex">
+            <a href="#projects" class="btn-primary">View Projects</a>
+            <a href="#contact" class="btn-secondary">Get in Touch</a>
+          </div>
+        </div>
+      </section>
+
+      <!-- About Section -->
+      <section class="about" id="about">
+        <h2>About Me</h2>
+        <p class="about-lead">
+          I build scalable, responsive web platforms with strong emphasis on
+          accessibility and clean architecture.
+        </p>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Frontend</h3>
+            <p>React, Next.js, JavaScript (ES6+), HTML5, CSS3, Tailwind CSS</p>
+          </div>
+          <div class="skill-card">
+            <h3>Backend & DB</h3>
+            <p>Node.js, Express, MongoDB, MySQL</p>
+          </div>
+          <div class="skill-card">
+            <h3>UI/UX & Standards</h3>
+            <p>Figma, Web Accessibility (WCAG & ARIA), Responsive Design</p>
+          </div>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section class="projects" id="projects">
+        <h2>Featured Projects</h2>
+        <div class="projects-grid">
+          <article class="project-card">
+            <h3>E-Commerce Platform</h3>
+            <p>
+              Responsive online store featuring interactive cart state
+              management and modern CSS design.
+            </p>
+            <div class="tags flex">
+              <span>React</span>
+              <span>Context API</span>
+              <span>Tailwind CSS</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Weather Dashboard</h3>
+            <p>
+              Accessible weather application providing real-time forecasts with
+              clean data representations.
+            </p>
+            <div class="tags flex">
+              <span>Next.js</span>
+              <span>REST API</span>
+              <span>CSS Modules</span>
+            </div>
+          </article>
+          <article class="project-card">
+            <h3>Maintenance Portal</h3>
+            <p>
+              High-performance single-page application built for custom local
+              business service booking.
+            </p>
+            <div class="tags flex">
+              <span>JavaScript</span>
+              <span>Node.js</span>
+              <span>Express</span>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section class="contact" id="contact">
+        <h2>Contact Me</h2>
+        <p class="contact-desc">
+          Have a project in mind or want to collaborate? Send a message below.
+        </p>
+        <form
+          class="contact-form flex flex-col"
+          onsubmit="event.preventDefault()"
+        >
+          <div class="form-group flex flex-col">
+            <label for="name">Name</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Your Name"
+              required
+            />
+          </div>
+          <div class="form-group flex flex-col">
+            <label for="email">Email</label>
+            <input
+              type="email"
+              id="email"
+              name="email"
+              placeholder="Your Email"
+              required
+            />
+          </div>
+          <div class="form-group flex flex-col">
+            <label for="message">Message</label>
+            <textarea
+              id="message"
+              name="message"
+              rows="5"
+              placeholder="Your Message"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn-submit">Send Message</button>
+        </form>
+      </section>
+    </main>
+  </body>
+</html>
