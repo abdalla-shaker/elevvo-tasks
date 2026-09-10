@@ -1,6 +1,6 @@
 # Elevvo Internship Tasks 🚀
 
-Welcome to my repository for the **Elevvo Internship Program**. This repository houses all the tasks, projects, and practical assignments completed during my internship, showcasing my progress in front-end development, UI/UX implementation, and interactive JavaScript features.
+Welcome to my main repository for the **Elevvo Internship Program**. This repository houses all tasks, projects, and practical assignments completed during my internship, showcasing my progress in front-end web development, responsive UI design, and interactive JavaScript functionality.
 
 ---
 
@@ -13,9 +13,13 @@ elevvo-tasks/
 │   ├── index.html
 │   ├── style.css
 │   ├── script.js
-│   └── README.md                   # Task-specific documentation
+│   └── README.md
 │
-└── task-two-.../                   # Upcoming Internship Tasks
+└── task-two-contact-form/          # Task 2: Interactive Contact Form & Client Validation
+    ├── index.html
+    ├── style.css
+    ├── script.js
+    └── README.md
 ```
 
 ---
@@ -23,21 +27,33 @@ elevvo-tasks/
 ## 🛠️ Tech Stack & Skills Demonstrated
 
 - **Languages:** HTML5, CSS3, JavaScript (ES6+)
-- **Layouts & Design:** Flexbox, CSS Grid, Responsive Design (Mobile-First approach)
-- **Web APIs & JS Concepts:** Intersection Observer API (Scroll-Spy), DOM Manipulation, Event Listeners
-- **UI/UX Principles:** Dynamic Navigation, CSS Animations/Transitions, Form States
+- **Layouts & Design:** Flexbox, CSS Grid, Responsive Web Design (Mobile-First)
+- **Web APIs & JS Concepts:** Intersection Observer API, DOM Manipulation, Event Handling, Client-Side Form Validation
+- **UI/UX Principles:** Interactive Form Controls, Custom Error States, Accessibility Best Practices, Smooth Transitions
 
 ---
 
 ## 📋 Completed Tasks
 
 ### 🔹 Task 1: Responsive Layout with Collapsible Sidebar & Scroll-Spy
-- **Overview:** Built a responsive single-page web layout featuring a collapsible CSS sidebar navigation menu and four full-content sections.
+- **Overview:** Built a responsive single-page layout featuring a collapsible CSS sidebar menu and four interconnected content sections.
 - **Key Features:**
-  - **Dynamic Sidebar Navigation:** Collapsible `<aside>` sidebar with clean transitions, responsive behavior across mobile viewports, and interactive toggle triggers.
-  - **Scroll-Spy Mechanism:** Powered by the `Intersection Observer API` to dynamically highlight the active sidebar link as the user scrolls.
-  - **Interactive Sections:** Included a Hero landing section, Skills grid (About), Project card showcase, and a functional Contact form.
-- **Detailed Docs:** Check out the [`task-one-collapsible-sidebar/README.md`](./task-one-collapsible-sidebar/README.md) for full setup and technical details.
+  - **Dynamic Navigation:** Collapsible sidebar with smooth transitions and responsive layout scaling across mobile viewports.
+  - **Scroll-Spy Mechanism:** Integrated `Intersection Observer API` to sync navigation highlights dynamically as the user scrolls.
+- **Repositories & Documentation:** 
+  - [Individual Task Repository](https://github.com/abdalla-shaker/sidebar-site)
+  - [Task Documentation](./task-one-collapsible-sidebar/README.md)
+
+---
+
+### 🔹 Task 2: Interactive Contact Form
+- **Overview:** Developed an accessible and user-friendly contact form with client-side field validation and dynamic submission states.
+- **Key Features:**
+  - **Form Validation:** Immediate feedback and clear error indicators for email syntax, required fields, and input formatting.
+  - **Responsive UI:** Clean, modern input design that scales smoothly across mobile, tablet, and desktop screens.
+- **Repositories & Documentation:** 
+  - [Individual Task Repository](https://github.com/abdalla-shaker/contact-form)
+  - [Task Documentation](./task-two-contact-form/README.md)
 
 ---
 
@@ -45,18 +61,18 @@ elevvo-tasks/
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/your-username/elevvo-tasks.git
+   git clone https://github.com/abdalla-shaker/elevvo-tasks.git
    ```
 
-2. **Navigate into a specific task folder:**
+2. **Navigate into any task directory:**
    ```bash
-   cd elevvo-tasks/task-one-collapsible-sidebar
+   cd elevvo-tasks/task-two-contact-form
    ```
 
-3. **Open `index.html`** in your browser (or use VS Code Live Server).
+3. **Open `index.html`** directly in your browser or launch via VS Code Live Server.
 
 ---
 
 ## 👨‍💻 Author
 
-- **Abdalla Shaker**
+- **Abdalla Shaker** — [GitHub Profile](https://github.com/abdalla-shaker)
