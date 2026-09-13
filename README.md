@@ -50,7 +50,7 @@ elevvo-tasks/
   - **Scroll-Spy Mechanism:** Integrated `Intersection Observer API` to sync navigation highlights dynamically as the user scrolls.
 - **Repositories & Documentation:** 
   - [Individual Task Repository](https://github.com/abdalla-shaker/sidebar-site)
-  - [Task Documentation](https://github.com/abdalla-shaker/sidebar-site)
+  - [Live Demo](https://abdalla-shaker.github.io/sidebar-site/)
 
 ---
 
@@ -61,7 +61,7 @@ elevvo-tasks/
   - **Responsive UI:** Clean, modern input design that scales smoothly across mobile, tablet, and desktop screens.
 - **Repositories & Documentation:** 
   - [Individual Task Repository](https://github.com/abdalla-shaker/contact-form)
-  - [Task Documentation](https://github.com/abdalla-shaker/contact-form)
+  - [Live Demo](https://abdalla-shaker.github.io/contact-form/)
 
 ---
 
@@ -74,7 +74,6 @@ elevvo-tasks/
 - **Repositories & Documentation:**
   - [Individual Task Repository](https://github.com/abdalla-shaker/taskflow)
   - [Live Demo](https://abdalla-shaker.github.io/taskflow/)
-  - [Task Documentation](https://github.com/abdalla-shaker/taskflow)
 
 ---
 
