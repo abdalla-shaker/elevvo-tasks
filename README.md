@@ -1,6 +1,6 @@
 # Elevvo Internship Tasks 🚀
 
-Welcome to my main repository for the **Elevvo Internship Program**. This repository houses all tasks, projects, and practical assignments completed during my internship, showcasing my progress in front-end web development, responsive UI design, and interactive JavaScript functionality.
+Welcome to my main repository for the **Elevvo Internship Program**. This repository houses all tasks, projects, and practical assignments completed during my internship, showcasing my progress in front-end web development, responsive UI design, and interactive JavaScript/React functionality.
 
 ---
 
@@ -15,10 +15,17 @@ elevvo-tasks/
 │   ├── script.js
 │   └── README.md
 │
-└── task-two-contact-form/          # Task 2: Interactive Contact Form & Client Validation
-    ├── index.html
-    ├── style.css
-    ├── script.js
+├── task-two-contact-form/          # Task 2: Interactive Contact Form & Client Validation
+│   ├── index.html
+│   ├── style.css
+│   ├── script.js
+│   └── README.md
+│
+└── task-three-taskflow/            # Task 3: TaskFlow React Application
+    ├── public/
+    ├── src/
+    ├── package.json
+    ├── vite.config.js
     └── README.md
 ```
 
@@ -26,10 +33,11 @@ elevvo-tasks/
 
 ## 🛠️ Tech Stack & Skills Demonstrated
 
-- **Languages:** HTML5, CSS3, JavaScript (ES6+)
+- **Languages & Frameworks:** HTML5, CSS3, JavaScript (ES6+), React
+- **Build Tools & Libraries:** Vite, Tailwind CSS, `gh-pages`
 - **Layouts & Design:** Flexbox, CSS Grid, Responsive Web Design (Mobile-First)
-- **Web APIs & JS Concepts:** Intersection Observer API, DOM Manipulation, Event Handling, Client-Side Form Validation
-- **UI/UX Principles:** Interactive Form Controls, Custom Error States, Accessibility Best Practices, Smooth Transitions
+- **Web APIs & JS Concepts:** Intersection Observer API, DOM Manipulation, Event Handling, Client-Side Form Validation, LocalStorage API, Custom React Hooks
+- **UI/UX Principles:** Interactive Form Controls, State Management, Custom Error States, Accessibility Best Practices, Smooth Transitions
 
 ---
 
@@ -57,6 +65,19 @@ elevvo-tasks/
 
 ---
 
+### 🔹 Task 3: TaskFlow Management Application
+- **Overview:** Built a modern, responsive task management application using React and Vite to help users track and organize workflows seamlessly.
+- **Key Features:**
+  - **Task Management:** Full CRUD capabilities (create, read, edit, delete, complete) with interactive UI state updates.
+  - **Local Persistence:** Data automatically saves to browser LocalStorage so tasks persist across sessions.
+  - **Live Web Page:** Deployed automatically using GitHub Pages.
+- **Repositories & Documentation:**
+  - [Individual Task Repository](https://github.com/abdalla-shaker/taskflow)
+  - [Live Demo](https://abdalla-shaker.github.io/taskflow/)
+  - [Task Documentation](./task-three-taskflow/README.md)
+
+---
+
 ## 🚀 How to Run Locally
 
 1. **Clone the repository:**
@@ -66,10 +87,15 @@ elevvo-tasks/
 
 2. **Navigate into any task directory:**
    ```bash
-   cd elevvo-tasks/task-two-contact-form
+   cd elevvo-tasks/task-three-taskflow
    ```
 
-3. **Open `index.html`** directly in your browser or launch via VS Code Live Server.
+3. **Install dependencies and run (for React/Vite tasks):**
+   ```bash
+   npm install
+   npm run dev
+   ```
+   *(For static HTML/CSS tasks, simply open `index.html` directly in your browser).*
 
 ---
 
